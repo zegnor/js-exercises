@@ -1,0 +1,39 @@
+body {
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock {
+    font-family: monospace;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(1px);
+    background-color: hsla(0, 0%, 50%, 0.1);
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #clock {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #clock {
+        font-size: 3rem;
+    }
+}
